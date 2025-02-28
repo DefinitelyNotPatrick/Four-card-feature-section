@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 3.6rem;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 0.5em;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+}
+.list__item--1 {
+  grid-column-start: 2;
+}
+.list__item--2 {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+.list__item--3 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.list__item--4 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}/*# sourceMappingURL=style.css.map */
